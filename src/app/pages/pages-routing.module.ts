@@ -13,7 +13,16 @@ const routes: Routes = [
       },
       {
         path: 'form', loadChildren: () => import('./form/form.module').then(m => m.FormModule)
-      }
+      },
+      {
+        path: 'table', loadChildren: () => import('./table/table.module').then(m => m.TableModule)
+      },
+      {
+        path: 'tree', loadChildren: () => import('./tree/tree.module').then(m => m.TreeModule)
+      },
+      {
+        path: 'drag', loadChildren: () => import('./drag/drag.module').then(m => m.DragModule)
+      },
     ]
   },
 ];
